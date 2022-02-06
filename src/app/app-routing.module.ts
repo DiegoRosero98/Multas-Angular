@@ -5,8 +5,7 @@ import { MultasComponent } from './components/multas/multas.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'multas', pathMatch: 'full'},
-  { path: 'multas', component: MultasComponent },
-  { path: 'crear-multa', component: CrearMultaComponent },
+  { path: 'multas', component: MultasComponent }, 
   { path: '**', redirectTo: 'multas', pathMatch: 'full' }
 ];
 

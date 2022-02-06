@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "multas-acec6": {
+      "hosting": {
+        "multasMVC": [
+          "multas-acec6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "multas-acec6"
+  }
+}

@@ -5,53 +5,30 @@
             
             <table class="table mt-4 table-dark table-striped">
                 <thead>
-                    <tr>
-                        <th></th>
+                    <tr>                        
                         <th>Nombre Completo</th>
-                        <th>Fecha de Pago</th>
+                        <th>Fecha de Pago</th>  
                         <th>Fecha Actual</th>
                         <th>Total a Pagar</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Diego Rosero</td>
-                        <td>30/01/2022</td>
-                        <td>02/05/2022</td>
-                        <td>$30</td>
+                    <tr *ngFor="let multa of multas">                       
+                        <td>{{multa.name}}</td>
+                        <td id="fecha">{{multa.fechaMaxPago}}</td>                     
+                        <td>2/6/2022</td>
+                        <td>{{multa.multa | currency}}</td>
                         <td>
                             <i class="fas fa-edit fa-lg text-info" style="margin-right: 10px;"></i>
                             <i class="fas fa-trash-alt fa-lg text-danger"></i>
                         </td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>Diego Rosero</td>
-                        <td>30/01/2022</td>
-                        <td>02/05/2022</td>
-                        <td>$30</td>
-                        <td></td>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>Diego Rosero</td>
-                        <td>30/01/2022</td>
-                        <td>02/05/2022</td>
-                        <td>$30</td>
-                        <td>                            
-                        </td>
-                    </tr>
-                    
+                    </tr>                                      
                 </tbody>
-            </table>
-
-            <button type="button" class="btn btn-dark btn-lg float-right mt-2" routerLink="/crear-multa">Agregar</button>
-
+            </table>                
         </div>
     </div>
 </div>
+
+
 
